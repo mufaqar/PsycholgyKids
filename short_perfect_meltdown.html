@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect at School, Meltdown at Home — Short Script</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #fcf8f3;
+            color: #1e1e1e;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { max-width: 880px; width: 100%; }
+
+        .meta {
+            background: linear-gradient(135deg, #4a3f5c 0%, #2d2440 100%);
+            color: #f0ede8;
+            border-radius: 24px;
+            padding: 40px 44px;
+            margin-bottom: 48px;
+            box-shadow: 0 8px 32px rgba(0,0,0,.12);
+        }
+        .meta h1 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -.02em;
+            color: #fff;
+        }
+        .meta .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.12);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: #c8b8e0;
+            margin-bottom: 14px;
+        }
+        .meta .headline-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 18px;
+        }
+        .meta .headline-options span {
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.12);
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #d6cce8;
+        }
+        .meta .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #c8bce0;
+            margin-bottom: 18px;
+            max-width: 700px;
+        }
+        .meta .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .meta .tags span {
+            background: rgba(255,255,255,.08);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 13px;
+            color: #c8b8e0;
+            font-weight: 500;
+        }
+        .meta .tags span::before { content: '# '; opacity: .55; }
+
+        .scene {
+            background: #fff;
+            border-radius: 20px;
+            padding: 36px 40px;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.04);
+            border: 1px solid #eee8e0;
+            transition: box-shadow .2s;
+        }
+        .scene:hover { box-shadow: 0 6px 24px rgba(0,0,0,.07); }
+        .scene .scene-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4a3f5c;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .scene .scene-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #4a3f5c;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: #8a7e72;
+            margin-bottom: 6px;
+            margin-top: 18px;
+        }
+        .section-label:first-of-type { margin-top: 0; }
+        .scene .image-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+        }
+        .scene .video-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+            background: #f8f5f1;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #4a3f5c;
+        }
+        .scene .voiceover {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #5a4e42;
+            font-style: italic;
+            background: #fdfaf6;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #c8a87c;
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 16px 10px; }
+            .meta { padding: 28px 22px; }
+            .meta h1 { font-size: 22px; }
+            .scene { padding: 24px 20px; }
+            .scene .scene-title { font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ═══════════ META ═══════════ -->
+    <div class="meta">
+        <div class="badge">YouTube Short · PsychologyKids</div>
+        <h1>🎬 Viral Title Options</h1>
+        <div class="headline-options">
+            <span>Why Your Child Is Perfect at School But Falls Apart at Home</span>
+            <span>The Angel at School, The Storm at Home — What's Really Going On</span>
+            <span>Emotional Masking in Kids — The Hidden Cost of Being "Good" All Day</span>
+        </div>
+
+        <div style="margin: 24px 0 14px; height:1px; background: rgba(255,255,255,.08);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 8px;">📝 Short Description</h1>
+        <div class="description">
+            Does your child behave perfectly at school only to explode the moment they get home? It's not manipulation — it's emotional exhaustion. Here's the psychology behind the meltdown.
+        </div>
+
+        <div style="margin: 20px 0 14px; height:1px; background: rgba(255,255,255,.08);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 10px;">🏷️ Tags</h1>
+        <div class="tags">
+            <span>childpsychology</span>
+            <span>parentingtips</span>
+            <span>afterchoolmeltdown</span>
+            <span>emotionalsafety</span>
+            <span>kidsshors</span>
+            <span>psychologykids</span>
+            <span>parentingadvice</span>
+            <span>childanxiety</span>
+            <span>emotionalmasking</span>
+            <span>behaviorproblems</span>
+        </div>
+    </div>
+
+    <!-- ═══════════ SCENE 1 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">1</span> The Perfect Student</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A bright classroom in warm Studio Ghibli style, soft daylight streaming through tall windows while dust particles float gently in sunbeams. The faceless child sits at a desk with perfect posture — hands folded neatly, papers organized, pencil placed precisely beside their notebook. The teacher smiles warmly nearby, other children work quietly. The child raises their hand calmly, waits patiently, answers correctly. Their body language is controlled, polite, and socially aware — shoulders relaxed but attentive, head tilted slightly with engaged curiosity. The room feels peaceful and orderly, filled with warm pastel colors — soft greens, pale yellows, natural wood tones. The child appears completely fine, even happy. Everything about this scene suggests a well-adjusted, successful student. The teacher nods approvingly. Other children occasionally glance over, seeing someone who seems to have everything under control. The emotional cost of maintaining this image remains completely invisible.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style classroom animation of child perfectly participating in class with calm posture and organized desk, teacher smiling approvingly, warm sunlight and peaceful atmosphere.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"At school, they follow every rule, raise their hand, and stay perfectly calm — but maintaining that control costs more than anyone realizes."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 2 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">2</span> Holding It Together</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A lunch table in a sunny school cafeteria rendered in soft Studio Ghibli style. Children chat and laugh around the table while the faceless child sits among them, smiling politely and nodding along. But subtle details reveal hidden tension — their shoulders are slightly raised, their hands grip the lunchbox edge tighter than necessary, their smile is held a moment too long. A classmate says something slightly teasing, and the child's posture stiffens briefly before recovering with a practiced laugh. The environment is warm and lively — sunlight streaming through large windows, steam rising from lunch trays, colorful backpacks scattered nearby — but beneath the surface, the child is performing constant emotional labor. Every social interaction requires careful monitoring. The effort of appearing "normal" is invisible to everyone around them.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style cafeteria animation of child laughing politely with friends while subtle body tension reveals hidden effort, warm sunlight and busy lunchroom atmosphere.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"They learn early that being 'good' means hiding the hard feelings — so they smile through exhaustion all day long."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 3 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">3</span> The Car Ride Home</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            The back seat of a car in warm late-afternoon Studio Ghibli style. Golden sunlight flickers through passing trees as the vehicle moves gently along the road. The faceless child sits silently, staring out the window. Their posture has begun shifting from the perfect alertness of school — shoulders slowly dropping, face losing animation, body slumping as the safety of the car allows the mask to begin slipping. The driver's presence is implied in the front seat, familiar and non-demanding. Street shadows alternate with warm light across the child's fading expression. The passing world outside — houses, trees, distant playgrounds — creates a transitional space between performance and truth. The child is not yet melting down, but the armor is cracking. The car becomes a liminal space where the energy of holding it together finally begins releasing.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style car interior animation of child silently staring out window as mask slowly fades, warm flickering sunset light passing across their face, quiet emotional transition.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The car ride home is where the mask starts cracking — because the only person they feel safe enough to fall apart around is you."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 4 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">4</span> Entering the Door</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A cozy home entryway in warm Studio Ghibli style, soft evening light glowing through windows as the front door opens. The faceless child stands in the doorway, backpack still on, one hand gripping the strap. Their body language tells the full story — shoulders slumped forward, head tilted down, posture heavy with accumulated exhaustion. The contrast with the perfect student from the morning is striking. The home environment appears warm and inviting — soft lamplight, family photos on the wall, a cat stretching nearby, slippers waiting by the door — but the threshold itself represents an emotional boundary. Inside this door, the child no longer needs to perform. The release has not yet begun, but it is about to. The transition between public composure and private truth happens in this single step across the doorway.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style entryway animation of child standing just inside doorway with heavy posture, backpack still on, warm home atmosphere contrast with exhausted body language.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The moment they walk through the front door, the safety of home finally allows everything they held back all day to come pouring out."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 5 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">5</span> The Explosion</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A living room in soft Studio Ghibli style during early evening, warm lamp light casting gentle shadows. The faceless child stands near the couch, but the controlled posture from school is completely gone. Their face is contorted in raw emotion — tears streaming, arms flapping or fists clenching, body moving in uncontrolled bursts of frustration. A backpack lies abandoned on the floor. Nearby, a homework paper has been crumpled. The room itself remains warm and safe — soft blankets, a half-drunk glass of water, drifting dust particles in golden light — but the emotional storm filling the space is intense and unfiltered. A caregiver sits nearby with patient posture, not fixing, not punishing, just present. This is not misbehavior — it is release. The pressure that built all day finally finding an exit.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style living room animation of child having emotional meltdown after school, backpack thrown aside, caregiver sitting patiently nearby, warm lighting contrasting emotional intensity.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"What looks like a meltdown over homework is actually days of held-back emotions finally finding a safe place to land."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 6 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">6</span> The Aftermath</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A soft bedroom scene in dreamy Studio Ghibli style during twilight, pale blue and warm amber light blending through the window. The faceless child lies curled on their bed, posture completely collapsed — knees pulled up, face pressed into a pillow, one arm hanging limply over the edge. The meltdown has passed, leaving only exhaustion in its wake. The room feels tender and quiet — curtains drifting slowly in evening air, a stuffed animal fallen to the floor, moonlight just beginning to appear outside. The child looks smaller now, vulnerable rather than explosive. The emotional release drained everything they had. In this quiet aftermath, there is no shame — only the exhausted peace that follows finally being honest about how hard the day really was.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style twilight bedroom animation of child lying exhausted after meltdown, posture small and vulnerable, calm evening atmosphere contrasting earlier emotional storm.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"After the storm passes, what remains is exhaustion — not defiance. They held it together as long as their nervous system possibly could."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 7 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">7</span> Why Home Is Different</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A softly lit bedroom corner in warm Studio Ghibli style, evening lamp creating a gentle circle of golden light. The faceless child sits cross-legged on the floor, now calm, slowly drawing with crayons. The caregiver sits nearby on the floor, also drawing, their presence quiet and unstructured. No demands, no instructions. The scene captures why home is the only place the meltdown happens — because home is where unconditional safety lives. The child's posture is finally natural: legs loosely crossed, tongue slightly out in concentration, shoulders completely relaxed. Outside the window, the last light of sunset fades into peaceful blue evening. The room feels like a sanctuary. The child needed to release before they could return to this state. The meltdown was not the enemy of peace — it was the path back to it.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style bedroom animation of child calmly drawing on floor beside caregiver after emotional release, warm lamp light creating safe atmosphere, peaceful evening setting.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The meltdown happens at home because home is the only place where the child feels safe enough to fall apart — and that safety is exactly what they need."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 8 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">8</span> Understanding Changes Everything</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A warm kitchen in golden morning Studio Ghibli style, sunlight pouring through windows as a new day begins. The faceless child sits at the breakfast table, backpack ready, a fresh day ahead. The caregiver kneels beside them, hand resting gently on their shoulder, posture radiating understanding rather than worry. The child's face is calmer this morning — not the rigid perfect mask, but genuine ease. The meltdowns may continue, but they are no longer mysterious or frightening. They have been understood as releases, not failures. The kitchen glows with warmth — steam rising from a mug, curtains moving gently, a small vase of flowers on the windowsill. The child meets the caregiver's eyes briefly and offers a small, real smile. The cycle of holding it together and releasing at home is not broken — but it is now seen, accepted, and held with compassion.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style morning kitchen animation of child calmly starting new day as caregiver offers gentle understanding touch, warm sunlight creating hopeful emotional atmosphere.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Children don't melt down at home because home is unsafe — they melt down because home is the only place they feel safe enough to finally be real."</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 16px; color: #b0a498; font-size: 13px;">
+        PsychologyKids — Understanding the mind behind the behavior
+    </div>
+
+</div>
+</body>
+</html>

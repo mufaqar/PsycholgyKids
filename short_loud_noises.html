@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psychology Kids & Loud Noises — Short Script</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #fcf8f3;
+            color: #1e1e1e;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { max-width: 880px; width: 100%; }
+
+        /* ── HEADER / META ── */
+        .meta {
+            background: linear-gradient(135deg, #2d3e50 0%, #1a2a3a 100%);
+            color: #f0ede8;
+            border-radius: 24px;
+            padding: 40px 44px;
+            margin-bottom: 48px;
+            box-shadow: 0 8px 32px rgba(0,0,0,.12);
+        }
+        .meta h1 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -.02em;
+            color: #fff;
+        }
+        .meta .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.12);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: #b0c7dd;
+            margin-bottom: 14px;
+        }
+        .meta .headline-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 18px;
+        }
+        .meta .headline-options span {
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.12);
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #d6e3f0;
+        }
+        .meta .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #c8d6e5;
+            margin-bottom: 18px;
+            max-width: 700px;
+        }
+        .meta .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .meta .tags span {
+            background: rgba(255,255,255,.08);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 13px;
+            color: #b0c7dd;
+            font-weight: 500;
+        }
+        .meta .tags span::before { content: '# '; opacity: .55; }
+
+        /* ── SCENE ── */
+        .scene {
+            background: #fff;
+            border-radius: 20px;
+            padding: 36px 40px;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.04);
+            border: 1px solid #eee8e0;
+            transition: box-shadow .2s;
+        }
+        .scene:hover { box-shadow: 0 6px 24px rgba(0,0,0,.07); }
+        .scene .scene-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2d3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .scene .scene-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #2d3e50;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: #8a7e72;
+            margin-bottom: 6px;
+            margin-top: 18px;
+        }
+        .section-label:first-of-type { margin-top: 0; }
+        .scene .image-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+        }
+        .scene .video-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+            background: #f8f5f1;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #2d3e50;
+        }
+        .scene .voiceover {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #5a4e42;
+            font-style: italic;
+            background: #fdfaf6;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #c8a87c;
+            margin-bottom: 4px;
+        }
+        .separator {
+            text-align: center;
+            color: #ccc3b8;
+            font-size: 22px;
+            letter-spacing: 6px;
+            margin: -12px 0 8px;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 600px) {
+            body { padding: 16px 10px; }
+            .meta { padding: 28px 22px; }
+            .meta h1 { font-size: 22px; }
+            .scene { padding: 24px 20px; }
+            .scene .scene-title { font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ═══════════ META ═══════════ -->
+    <div class="meta">
+        <div class="badge">YouTube Short · PsychologyKids</div>
+        <h1>🎬 Viral Title Options</h1>
+        <div class="headline-options">
+            <span>Why Your Child Suddenly Fears Loud Noises (Not What You Think)</span>
+            <span>The Hidden Reason Loud Noises Terrify Some Children</span>
+            <span>Blender Anxiety — When Everyday Sounds Become Terrifying for Kids</span>
+        </div>
+
+        <div style="margin: 24px 0 14px; height:1px; background: rgba(255,255,255,.08);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 8px;">📝 Short Description</h1>
+        <div class="description">
+            Does your child panic at the vacuum, blender, or thunder? It's not just being "sensitive" — it's a real nervous system response. Here's what's actually happening inside their body.
+        </div>
+
+        <div style="margin: 20px 0 14px; height:1px; background: rgba(255,255,255,.08);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 10px;">🏷️ Tags</h1>
+        <div class="tags">
+            <span>childpsychology</span>
+            <span>parentingtips</span>
+            <span>loudnoiseanxiety</span>
+            <span>sensorysensitivity</span>
+            <span>kidsshorts</span>
+            <span>psychologykids</span>
+            <span>parentingadvice</span>
+            <span>childanxiety</span>
+            <span>emotionaldevelopment</span>
+        </div>
+    </div>
+
+    <!-- ═══════════ SCENE 1 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">1</span> The Innocent Morning</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A cozy kitchen in warm Studio Ghibli style during soft morning light. Golden sunlight streams through lace curtains, illuminating floating dust particles. A faceless child around five years old sits at a wooden table with a bowl of cereal, posture relaxed, feet swinging gently. The room feels peaceful — warm wooden tones, a small potted plant by the window, birds singing faintly outside. Suddenly, the mother reaches for the blender on the counter. The child's body language shifts instantly — shoulders lifting, hands gripping the table edge, eyes widening through head orientation. The blender cord being plugged in becomes the emotional trigger. The kitchen remains warm and beautiful, but the child's nervous system has already begun preparing for danger before any sound occurs. Soft textures, delicate sunlight, and the contrast between domestic peace and anticipatory fear create emotional depth.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style kitchen animation with child eating breakfast peacefully, then freezing as parent approaches blender, slow cinematic push-in on child's tense posture, warm sunlight and drifting dust particles.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"To most people, a blender is just a kitchen appliance — but to their nervous system, it's an unpredictable explosion waiting to happen."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 2 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">2</span> The Sound Hits</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A bright living room in soft Studio Ghibli style, warm afternoon light filtering through windows. The faceless child sits on the floor with toys scattered around, finally relaxed and engaged. Then the vacuum cleaner starts in the next room. The sound itself is invisible, but its impact on the child is violently physical — their entire body jolts upward, hands flying to cover ears, shoulders hunched defensively, knees pulling toward their chest. The contrast is stark: the environment remains visually calm and beautiful — sunlight on wooden floors, curtains swaying gently, a toy left abandoned mid-play — but the child looks as though something dangerous entered their space. Their posture communicates genuine physical distress, not simple annoyance. The warm domestic setting becomes emotionally unsafe through the child's reaction alone.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style living room animation of child suddenly jolting and covering ears as vacuum starts in next room, toys scattered nearby, slow-motion reaction emphasizing physical fear response.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The sound doesn't just startle them — it feels physically painful and emotionally overwhelming inside their body."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 3 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">3</span> Anticipating the Next One</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A warmly lit family kitchen in dreamy Studio Ghibli style during golden evening light. The faceless child stands frozen near the doorway while a parent holds the blender, preparing to make a smoothie. The blender hasn't started yet — but the child's body already radiates panic. Their hands press firmly over their ears, eyes squeezed shut, body turned slightly away as if bracing for impact. The parent's posture remains casual and unaware of the internal emergency unfolding. Warm amber sunlight streams through windows while steam rises gently from the stove, creating a peaceful atmosphere that contrasts painfully with the child's anticipatory terror. They know what is coming, and the waiting becomes its own form of fear. The emotional storytelling centers on anticipation being as overwhelming as the sound itself.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style kitchen animation of child covering ears before blender even starts, anticipating painful noise, slow emotional zoom highlighting anticipatory fear, warm sunset kitchen atmosphere.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"For these children, the fear begins long before the actual sound — anticipation becomes its own overwhelming experience."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 4 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">4</span> Thunder Is Different</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A softly lit bedroom at night in tranquil Studio Ghibli style, moonlight casting silver-blue shadows across blankets and wooden furniture. The faceless child lies in bed, finally calm after the evening routine. Outside the window, trees sway gently under starry skies. Then a low rumble rolls across the distance — distant thunder. Instantly, the child sits upright, blankets clutched to their chest, body rigid and scanning the dark room. Unlike the sudden jolt from the vacuum, this fear is slower, deeper, and more atmospheric. The thunder is unpredictable — there is no pattern, no warning, no control. Their breathing becomes visible through the rise and fall of their shoulders beneath soft pajamas. The room remains peaceful, night air drifting through curtains, but the child's nervous system now waits for the next rumble that could arrive at any moment.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style nighttime bedroom animation with child bolting upright after distant thunder, moonlight drifting across room, slow camera movement emphasizing lingering anticipation of next rumble.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Thunder terrifies them differently — because unlike a vacuum or blender, they never know when the next one will come."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 5 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">5</span> No Warning, No Control</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A sunlit park scene in lush Studio Ghibli style with tall grass, drifting clouds, and children playing in the distance. The faceless child sits on a picnic blanket, finally feeling safe outdoors where no sudden appliances exist. A nearby child pops a balloon with a sharp unexpected sound. The reaction is immediate and explosive — the child drops their snack, hands flying to their ears, body twisting away as if escaping a physical threat. Other children laugh at the popped balloon, unaware of the emotional earthquake happening nearby. The environment remains beautiful — warm greens, golden sunlight filtering through leaves, soft wind moving through grass — but the child's safety has been shattered by something as simple as a balloon. The unpredictability of outdoor sounds becomes the new source of fear.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style park animation of child panicking at sudden balloon pop while other children laugh, slow-motion reaction through peaceful natural setting, emotional contrast between beauty and fear.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The hardest part is that loud noises can happen anywhere — even places that felt completely safe before."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 6 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">6</span> Others Don't Understand</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A sunny living room rendered in hand-painted Studio Ghibli style during late afternoon. The faceless child sits curled on the couch while another family member casually turns on the vacuum cleaner nearby. The child flinches violently, and a visible sigh or subtle eye-roll comes from the family member. The child notices this reaction, and their posture shifts — shoulders curving inward, face turning away, arms tightening around their knees. The fear of sound now mixes with shame about being afraid. The environment remains warm and domestic — sunlight creating golden rectangles on the floor, plants by the window, soft blankets — but the child feels increasingly alone inside their sensitivity. The emotional distance created by others' frustration becomes heavier than the sound itself.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style living room animation of child flinching at vacuum while family member reacts with mild frustration, slow emotional push-in showing shame layering over fear.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"When others react with frustration, the child learns that their fear is not just overwhelming — it's also embarrassing."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 7 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">7</span> Small Brave Moment</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A warm kitchen in Studio Ghibli style during cheerful morning light, sunbeams cutting through windows filled with floating particles. The faceless child stands near the counter while a parent holds the blender. The child's hands are not covering their ears this time — instead, one hand grips their own shirt nervously while the other hovers near their chest. Their posture remains tense, but they are staying. They chose to stay. The parent meets their eyes briefly, nods gently, and gives them a moment to prepare. The child takes a small breath, shoulders lifting then settling slightly. The blender sits silently, not yet running, but the child has already won something important by not running away. The warm kitchen glows with emotional significance.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style kitchen animation of child choosing to stay near blender instead of fleeing, emotional close-up on bravery in warm morning light, parent offering patient presence.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Bravery isn't the absence of fear — it's choosing to stay even while the fear is still there inside the body."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 8 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">8</span> Nervous System Learning Safety</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A peaceful garden at golden hour in lush Studio Ghibli style, warm amber light covering flowers, grass, and a wooden bench beneath a large tree. The faceless child sits on the bench beside a caregiver, both relaxed. Nearby, someone mows a lawn several houses away — the sound is distant and muffled by trees. The child notices it briefly, shoulders twitching subtly, then returns to calm after glancing at the caregiver's relaxed posture. The fear signal passed through but did not take over. The environment feels emotionally restorative — drifting pollen, soft wind, golden light filtering through leaves. The child's nervous system is slowly learning that distant sounds do not require full alarm. The moment is unremarkable to anyone watching, but for the child it represents genuine progress. Safety is being learned, not just told.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style golden hour garden animation of child briefly noticing distant mower then returning to calm beside caregiver, slow gentle movement through warm nature emphasizing nervous system healing.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Healing happens slowly — one moment where the body learns that not every distant sound requires full alarm."</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 16px; color: #b0a498; font-size: 13px;">
+        PsychologyKids — Understanding the mind behind the behavior
+    </div>
+
+</div>
+</body>
+</html>
