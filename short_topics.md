@@ -1,7 +1,7 @@
 20 Article Titles for PsychologyKids
 [✓] Psychology kids who suddenly fear loud noises (vacuum, blender, thunder)  →  short_loud_noises.html
 [✓] Psychology kids who act perfect at school but melt down at home          →  short_perfect_meltdown.html
-[ ] Psychology kids who fear the dark — not what you think
+[✓] Psychology kids who fear the dark — not what you think                   →  short_dark_fear.html
 [ ] Psychology kids who lie about small things (even when you saw them)
 [ ] Psychology kids who refuse to say sorry
 [ ] Psychology kids who hate losing (even board games)

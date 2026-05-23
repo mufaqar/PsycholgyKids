@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fear of the Dark — Not What You Think — Short Script</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f4f0ec;
+            color: #1e1e1e;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { max-width: 880px; width: 100%; }
+
+        .meta {
+            background: linear-gradient(135deg, #1b2a3a 0%, #0f1b26 100%);
+            color: #e8e4e0;
+            border-radius: 24px;
+            padding: 40px 44px;
+            margin-bottom: 48px;
+            box-shadow: 0 8px 32px rgba(0,0,0,.18);
+        }
+        .meta h1 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -.02em;
+            color: #fff;
+        }
+        .meta .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.1);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: #8fb4d4;
+            margin-bottom: 14px;
+        }
+        .meta .headline-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 18px;
+        }
+        .meta .headline-options span {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.1);
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #b8cfe0;
+        }
+        .meta .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #a8bccf;
+            margin-bottom: 18px;
+            max-width: 700px;
+        }
+        .meta .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .meta .tags span {
+            background: rgba(255,255,255,.07);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 13px;
+            color: #8fb4d4;
+            font-weight: 500;
+        }
+        .meta .tags span::before { content: '# '; opacity: .45; }
+
+        .scene {
+            background: #fff;
+            border-radius: 20px;
+            padding: 36px 40px;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.04);
+            border: 1px solid #eee8e0;
+            transition: box-shadow .2s;
+        }
+        .scene:hover { box-shadow: 0 6px 24px rgba(0,0,0,.07); }
+        .scene .scene-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1b2a3a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .scene .scene-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #1b2a3a;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: #8a7e72;
+            margin-bottom: 6px;
+            margin-top: 18px;
+        }
+        .section-label:first-of-type { margin-top: 0; }
+        .scene .image-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+        }
+        .scene .video-prompt {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+            background: #f8f5f1;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #1b2a3a;
+        }
+        .scene .voiceover {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #5a4e42;
+            font-style: italic;
+            background: #fdfaf6;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border-left: 3px solid #c8a87c;
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 16px 10px; }
+            .meta { padding: 28px 22px; }
+            .meta h1 { font-size: 22px; }
+            .scene { padding: 24px 20px; }
+            .scene .scene-title { font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ═══════════ META ═══════════ -->
+    <div class="meta">
+        <div class="badge">YouTube Short · PsychologyKids</div>
+        <h1>🎬 Viral Title Options</h1>
+        <div class="headline-options">
+            <span>Why Your Child Fears the Dark — It's Not What You Think</span>
+            <span>The Real Reason Darkness Terrifies Some Children (It's Not Monsters)</span>
+            <span>When the Lights Go Out — What's Actually Scaring Your Child</span>
+        </div>
+
+        <div style="margin: 24px 0 14px; height:1px; background: rgba(255,255,255,.06);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 8px;">📝 Short Description</h1>
+        <div class="description">
+            Fear of the dark isn't about monsters under the bed — it's about what happens inside a child's brain when visual information disappears. Here's the psychology behind why darkness feels genuinely terrifying to some children.
+        </div>
+
+        <div style="margin: 20px 0 14px; height:1px; background: rgba(255,255,255,.06);"></div>
+
+        <h1 style="font-size: 18px; margin-bottom: 10px;">🏷️ Tags</h1>
+        <div class="tags">
+            <span>childpsychology</span>
+            <span>fearofdark</span>
+            <span>parentingtips</span>
+            <span>childhoodanxiety</span>
+            <span>bedtimefears</span>
+            <span>psychologykids</span>
+            <span>parentingadvice</span>
+            <span>emotionaldevelopment</span>
+            <span>kidsshorts</span>
+        </div>
+    </div>
+
+    <!-- ═══════════ SCENE 1 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">1</span> The Light Switch</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A cozy child's bedroom in warm Studio Ghibli style during golden bedtime light. Soft lamp glow fills the room — a small bedside lamp with a warm yellow shade, casting gentle circles of light across stuffed animals, a picture book, and neatly tucked blankets. The faceless child sits in bed, posture relaxed, listening to a bedtime story. Everything feels safe and warm. Then the parent reaches for the lamp switch. The child's body language shifts instantly — shoulders lifting, hands gripping the blanket edge, eyes tracking the parent's hand with growing alertness. The room is about to change from known to unknown. The lamp glow represents safety itself, and its disappearance represents something deeper than simple darkness. The warm golden light contrasts with the dark blue shadows already gathering in the corners of the room, waiting.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style bedroom animation of child relaxing in warm lamplight then tensing as parent reaches for light switch, slow push-in on child's alert posture, cozy bedtime atmosphere.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Fear of the dark isn't about monsters — it's about what happens when a child's brain suddenly loses the visual information it relies on to feel safe."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 2 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">2</span> The Dark Arrives</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            The same bedroom now plunged into near-complete darkness, rendered in deep blue and silver-black Studio Ghibli style. The lamp is off. Only faint moonlight seeps through curtain gaps, casting pale silver strips across the floor and bed. The faceless child lies rigid beneath the covers, eyes wide open, scanning the room through subtle head movements. The familiar bedroom has become unrecognizable — ordinary objects transform into ambiguous shapes. A pile of clothes becomes a crouching shadow. A chair becomes a watching figure. The child's imagination is not creating monsters — their brain is desperately trying to identify shapes with incomplete information, and every ambiguous shadow becomes a potential threat. Their breathing is shallow, one hand gripping the blanket near their chin, the other pressed against their own chest feeling their heartbeat. The darkness has not added anything scary — it has removed the safety of knowing.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style dark bedroom animation of child lying rigidly in bed, eyes wide, moonlight casting silver strips across room, familiar objects becoming ambiguous threatening shapes.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"When the lights go out, the brain doesn't see nothing — it starts filling the emptiness with imagined threats because not knowing feels dangerous."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 3 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">3</span> Every Sound Amplifies</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A dark bedroom in deep night, rendered in rich midnight blue and silver Studio Ghibli style. The faceless child lies frozen under covers, but something has changed — their head is slightly turned, orientation locked toward the closed bedroom door. A faint creak echoes from the hallway — the house settling, nothing more. But in darkness, sound becomes magnified emotionally. The child's body reacts as if the creak was a signal: shoulders tighten, breath catches, fingers curl into the blanket. The hallway beyond the door is completely dark, an unknown space the child cannot verify is safe. The environment itself — the familiar home — has become emotionally unpredictable. Moonlight continues drifting calmly through curtains, tree shadows move outside, but the child's nervous system is now fully alert, processing every distant sound as potential information about danger approaching.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style dark bedroom animation of child freezing at distant house creak, moonlight casting silver shadows, slow zoom emphasizing hyperalert listening posture.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"In darkness, every creak, every whisper, every distant sound becomes amplified — because the brain is desperately searching for clues about whether the environment is safe."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 4 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">4</span> The Bathroom Journey</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A dark hallway stretching toward a bathroom door, rendered in deep shadowy Studio Ghibli style with faint moonlight filtering from a distant window. The faceless child stands at the bedroom doorway, small and vulnerable in oversized pajamas, one hand gripping the doorframe. The bathroom door is only a few steps away but feels impossibly far. The hallway is dark except for a thin strip of silvery light near the far end. Ordinary household objects create unfamiliar silhouettes — a coat rack becomes a watching figure, a half-open door creates a black void. The child's body radiates hesitation: weight held back, one foot barely extended, shoulders hunched protectively. The bathroom trip becomes a journey through uncertainty. The environment is completely safe objectively, but the child cannot know that without seeing.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style dark hallway animation of child hesitating at bedroom doorway, bathroom door distant, ordinary objects transformed into threatening silhouettes by darkness.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"A simple trip to the bathroom becomes a journey through uncertainty — because in darkness, the brain cannot verify that anything is actually safe."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 5 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">5</span> Others Don't Understand</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A dimly lit living room in warm-cool Studio Ghibli style, a single lamp glowing while a parent sits on the couch, visibly tired. The faceless child stands nearby holding a pillow, having come out of their bedroom again. The parent's posture shows gentle frustration — shoulders slightly slumped, hand rubbing their own forehead, a soft sigh escaping. The child's body language shows conflict: they need comfort but also feel ashamed of needing it. Their free hand fidgets with pajama fabric while their feet shift uncertainly. The room is caught between two experiences — the parent sees a safe home and a child who keeps getting up; the child sees a dark bedroom they cannot face alone. The gap between these realities creates quiet tension in the warm lamplight. Neither is wrong, but the distance between their perceptions feels heavy.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style lamplit living room animation of child coming out of bedroom again while tired parent shows gentle frustration, slow emotional zoom on misunderstanding gap.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Parents often see a child refusing to sleep — but the child is experiencing genuine fear that feels impossible to face alone."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 6 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">6</span> The Night Light Helps — But Not Fully</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            A softly lit bedroom with a small night light glowing in the corner, rendered in gentle warm-amber Studio Ghibli style. The night light creates a small island of safety — illuminating the immediate area around the bed while deeper corners remain in shadow. The faceless child lies in bed, posture more relaxed than in complete darkness but not fully at ease. Their body faces the night light, taking comfort in its glow, but their back remains toward the darker side of the room. One hand grips the blanket edge, maintaining a subtle connection to safety. The night light helps — it provides enough visual information for the brain to feel somewhat secure — but the shadows beyond its reach still hold uncertainty. The environment is caught between safety and fear, much like the child's internal state.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style bedroom animation of child relaxing slightly under night light glow while darker corners remain, slow pan across room showing island of safety surrounded by shadow.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"A night light helps — but it doesn't fix the deeper issue. The fear isn't really about darkness. It's about not being able to verify safety."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 7 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">7</span> Parent Presence Changes Everything</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+            The same bedroom, same darkness, but now a parent sits calmly on the edge of the bed beside the child, rendered in tender Studio Ghibli style. A small phone screen provides minimal warm light — just enough to see the parent's grounded posture and peaceful expression. The faceless child lies beside them, posture dramatically different from earlier scenes — shoulders down, breathing steady, eyes finally closed or softly drifting. The room is still dark, the familiar shadows remain, but the child's nervous system has stopped treating darkness as a threat. Why? Not because the environment changed, but because the child is no longer alone with their fear. The parent's presence provides the safety that visual information could not. The darkness is the same; the emotional experience is completely transformed.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style dark bedroom animation of child sleeping peacefully while parent sits beside them, same room transformed by presence alone, moonlight and minimal warm light.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"The same room, the same darkness — but when a parent stays nearby, the child's nervous system finally believes it's safe enough to rest."</div>
+    </div>
+
+    <!-- ═══════════ SCENE 8 ═══════════ -->
+    <div class="scene">
+        <div class="scene-title"><span class="num">8</span> Learning That Dark Is Not Dangerous</div>
+        <div class="section-label">🎨 Image Prompt</div>
+        <div class="image-prompt">
+        A gentle morning scene in soft Studio Ghibli style, pale golden sunrise light streaming through curtains into the bedroom. The room is fully visible now — ordinary, warm, and safe. The faceless child sits up in bed, rubbing their eyes, looking around the space that felt so threatening hours ago. Sunshine reveals the true nature of every object: the pile of clothes is just a pile of clothes, the chair is just a chair, the corner shadows hold nothing. The child's posture shows quiet reflection — head tilted, shoulders relaxed, a faint sense of relief or curiosity in their stillness. The night is over, and the darkness has retreated. But something important happened: the child survived it. Each survived night builds a layer of evidence that darkness itself is not dangerous. The warm morning light fills the room with forgiveness and hope.
+        </div>
+        <div class="section-label">🎥 Video Prompt</div>
+        <div class="video-prompt">8-second Studio Ghibli-style sunrise bedroom animation of child sitting up in morning light seeing room as safe and ordinary, slow warm pan across objects that seemed threatening at night.</div>
+        <div class="section-label">🎙 Voice-over</div>
+        <div class="voiceover">"Healing from fear of the dark doesn't happen through logic alone — it happens through repeated experiences of surviving the night and discovering nothing was ever there."</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 16px; color: #b0a498; font-size: 13px;">
+        PsychologyKids — Understanding the mind behind the behavior
+    </div>
+
+</div>
+</body>
+</html>
